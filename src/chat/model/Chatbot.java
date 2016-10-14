@@ -17,7 +17,9 @@ public class Chatbot {
 	 * * Creates an instance of the Chatbot with the supplied username. * @param
 	 * userName The username for the chatbot.
 	 */
-	public Chatbot(String userName) {
+	public Chatbot(String userName) 
+	{
+		memesList = new ArrayList <String>();
 	}
 
 	private void buildMemesList() {
@@ -100,7 +102,8 @@ public class Chatbot {
 	 * * Getter method for the politicalTopicList object. * @return The
 	 * reference to the political topic list.
 	 */
-	public ArrayList<String> getPoliticalTopicList() {
+	public ArrayList<String> getPoliticalTopicList() 
+	{
 		return null;
 	}
 

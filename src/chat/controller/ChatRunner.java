@@ -6,7 +6,6 @@ public class ChatRunner
 	{
 		ChatController chatAppController = new ChatController();
 		chatAppController.start();
-		
-	}
+		}
 
 }
