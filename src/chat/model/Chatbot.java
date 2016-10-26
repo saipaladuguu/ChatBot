@@ -20,12 +20,34 @@ public class Chatbot {
 	public Chatbot(String userName) 
 	{
 		memesList = new ArrayList <String>();
+		buildMemesList();
+		politicalTopicList = new ArrayList <String>();
+		buildPoliticalTopicsList();
+		this.userName = userName;
+		this.content = ""
 	}
 
-	private void buildMemesList() {
+	private void buildMemesList() 
+	{
+		memesList = new ArrayList<String>();
+		memesList.add("doge");
+		memesList.add("cute animals");
+		memesList.add("grumpy cat");
+		memesList.add("dat boi");
+		memesList.add("willy wonka");
+		memesList.add("harambe");
+		memesList.add("john cena");
+		memesList.add("chuck norris");
+		memesList.add("");
+		memesList.add("")
 	}
 
-	private void buildPoliticalTopicsList() {
+	private void buildPoliticalTopicsList() 
+	{
+		politicalList = new ArrayList<String>();
+		politicalList.add("Democrat");
+		
+		
 	}
 
 	/**
@@ -54,8 +76,15 @@ public class Chatbot {
 	 *            The supplied String to be checked. * @return Whether it
 	 *            matches the content area.
 	 */
-	public boolean contentChecker(String currentInput) {
-		return false;
+	public boolean contentChecker(String currentInput) 
+	{
+		boolean hasContent = false;
+		
+		if (currentInput.contains(content))          
+		{
+			hasContent = true;
+		}
+		return hasContent;
 	}
 
 	/**
