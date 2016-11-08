@@ -6,7 +6,7 @@ import chat.view.ChatViewer;
 public class ChatController
 {	
 	private Chatbot stupidBot;
-	private ChatViewer dispaly;
+	private ChatViewer display;
 	
 	public ChatController()
 	{
@@ -20,9 +20,9 @@ public class ChatController
 	{
 		String response = "words";
 		
-		while(lengthChecker.lenghtChecker(response))
+		while(stupidBot.lengthChecker(response))
 		{
-			response = display.collectResponse("What do you want to talk about??")
+			response = display.collectResponse("What do you want to talk about??");
 		}
 	}
 }

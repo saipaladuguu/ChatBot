@@ -24,7 +24,7 @@ public class Chatbot {
 		politicalTopicList = new ArrayList <String>();
 		buildPoliticalTopicsList();
 		this.userName = userName;
-		this.content = ""
+		this.content = "";
 	}
 
 	private void buildMemesList() 
@@ -39,14 +39,22 @@ public class Chatbot {
 		memesList.add("john cena");
 		memesList.add("chuck norris");
 		memesList.add("");
-		memesList.add("")
+		memesList.add("");
 	}
 
 	private void buildPoliticalTopicsList() 
 	{
-		politicalList = new ArrayList<String>();
-		politicalList.add("Democrat");
+		politicalTopicList = new ArrayList<String>();
+		politicalTopicList.add("Democrat");
+		politicalTopicList.add("Republican");
+		politicalTopicList.add("Trump");
+		politicalTopicList.add("Hillary");
+		politicalTopicList.add("");
+		politicalTopicList.add("");
 		
+		.
+		
+				
 		
 	}
 

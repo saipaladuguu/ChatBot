@@ -1,5 +1,8 @@
 package chat.view;
 
+import javax.swing.JOptionPane;
+
+
 public class ChatViewer
 {
 	public String collectResponse(String question)
@@ -8,7 +11,7 @@ public class ChatViewer
 		
 		response = JOptionPane.showInputDialog(null, question);
 		
-		return response
+		return response;
 	}
 	public void displayMessage(String message)
 	{
